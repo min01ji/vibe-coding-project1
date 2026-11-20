@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  background: #f4f4f2;
+  color: #1c1c1c;
+  font-family: "나눔고딕", "맑은 고딕", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  min-height: 100vh;
+}
+
+.profile {
+  align-self: center;
+  padding: clamp(1.75rem, 5vw, 5rem);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+h1, h2, h3, p, figure {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.theme {
+  margin-top: 0.25rem;
+  color: #595959;
+}
+
+.greeting {
+  margin-top: 0.65rem;
+}
+
+.card, footer {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #c9c9c9;
+}
+
+h2, h3, .category {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+.card p + p, .tags + h3, .tags + p {
+  margin-top: 0.35rem;
+}
+
+.tags {
+  margin: 0.1rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.farewell {
+  font-weight: 700;
+}
+
+footer p + p {
+  margin-top: 0.2rem;
+  color: #595959;
+}
+
+.portrait {
+  display: grid;
+  place-items: center;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: min(100vh, 150vw);
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+/* 글을 읽을 공간이 좁아지면 그림을 소개 아래에 둡니다. */
+@media (max-width: 44rem) {
+  .page { grid-template-columns: 1fr; }
+
+  .portrait img {
+    height: auto;
+    max-height: 85vh;
+  }
+}

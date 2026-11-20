@@ -1,0 +1,44 @@
+# 환경 변수와 가상환경
+.env
+.env.*
+.venv/
+venv/
+env/
+.virtualenv/
+
+# 파이썬 캐시와 빌드 결과
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.tox/
+.nox/
+.ipynb_checkpoints/
+.coverage*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.eggs/
+output/
+node_modules/
+
+# 로그, 편집기 설정, 임시 파일
+*.log
+logs/
+.idea/
+.vscode/
+.vs/
+*.iml
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*~
+tmp/
+temp/
+.DS_Store
+Thumbs.db

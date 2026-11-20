@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미쿠의 벽돌깨기</title>
+  <link rel="stylesheet" href="brick_game.css">
+  <script defer src="brick_game.js"></script>
+</head>
+<body>
+  <main class="cabinet">
+    <header class="scoreboard">
+      <h1>미쿠의 벽돌깨기</h1>
+      <div class="counters">
+        <div>남은 벽돌 <strong id="remaining">56</strong></div>
+        <div>남은 기회 <strong id="chances">3</strong></div>
+      </div>
+    </header>
+    <section class="stage" aria-label="게임판">
+      <canvas id="board" width="960" height="600" aria-describedby="controls">이 브라우저에서는 게임판을 표시할 수 없습니다.</canvas>
+      <div class="message" id="message" role="status">
+        <strong id="state-title">준비 완료</strong>
+        <span id="state-hint">스페이스바로 시작</span>
+      </div>
+    </section>
+    <footer id="controls">
+      <span><kbd>←</kbd> <kbd>→</kbd> 이동</span>
+      <span><kbd>스페이스바</kbd> 공 출발 · 다시 시작</span>
+    </footer>
+  </main>
+</body>
+</html>
